@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ServiceNavService } from '../../service/service-nav.service';
+import { ServiceNavService } from '../../services/service-nav.service';
 
 @Component({
   selector: 'app-nav',
@@ -9,5 +9,11 @@ import { ServiceNavService } from '../../service/service-nav.service';
 export class NavComponent {
   constructor(private NavService: ServiceNavService) { };
   u = this.NavService.getUser();
+  g() {
+    // if (e)
+    console.log("gggggg");
+    
+      this.u = this.NavService.getUser();
+  }
 
 }

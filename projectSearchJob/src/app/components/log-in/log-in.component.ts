@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { LoginService } from '../../service/login.service';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { LoginService } from '../../services/login.service';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -12,26 +12,28 @@ export class LogInComponent {
   errorMessage: string = '';
 
   constructor(private loginService: LoginService, private router: Router) { }
+  @Output()
+  submit: EventEmitter<any> = new EventEmitter<any>();
 
   onSubmit(form: NgForm) {
     const { userName, password } = form.value;
+    console.log(userName);
+    console.log(password);
+
 
 
     this.loginService.authenticate(userName, password).subscribe(
-      res => {
-        console.log(res);
-        if (res) {
-           localStorage.setItem('user', JSON.stringify(res));
-        }
-        this.errorMessage = 'שם משתמש או סיסמה שגויים. נסה שנית.';
+      data => {
+        console.log('Success:', data);
+        localStorage.setItem('user', JSON.stringify(data));
+        this.submit.emit();
+        this.router.navigate(['/SearchJob']);
 
-       
       },
-      (error) => {
-        // console.error('Error during authentication:', error);
+      error => {
+        console.error('Error:', error);
         this.errorMessage = 'שם משתמש או סיסמה שגויים. נסה שנית.';
       }
     );
-    this.router.navigate(['/SearchJob']);
   }
 }
