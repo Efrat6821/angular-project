@@ -1,0 +1,34 @@
+[
+    {
+        "Id": 1,
+        "UserName": "michal22362",
+        "Password": "mpMP22362%",
+        "FullName": "michal",
+        "Email": "michal22362@gmail.com",
+        "JobSearchField": "developer"
+    },
+    {
+        "Id": 2,
+        "UserName": "Efrat6821",
+        "Password": "392817",
+        "FullName": "Efrat Grinboim",
+        "Email": "Efrat6821@gmail.com",
+        "JobSearchField": "developer"
+    },
+    {
+        "Id": 3,
+        "UserName": "AyalaD",
+        "Password": "794613a",
+        "FullName": "Ayala Drabkin",
+        "Email": "Ayala@gmail.com",
+        "JobSearchField": "Tax consultancy"
+    },
+    {
+        "Id": 4,
+        "UserName": "Rach88",
+        "Password": "885r",
+        "FullName": "Rachel Fridman",
+        "Email": "r0553268754@gmail.com",
+        "JobSearchField": "teacher"
+    }
+]
