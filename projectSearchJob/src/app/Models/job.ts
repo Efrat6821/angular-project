@@ -1,8 +1,9 @@
 export interface Job {
-    jobField: string,
-    name: string,
-    scopeOfHours: number,
-    Area: string,
-    requirements: string,
-    WorkingFromHome: boolean
+    id: number,
+    company: string,
+    description: string,
+    filed: string,
+    scopeOfPosition: string,
+    jobArea: string,
+    jobName: string
 }

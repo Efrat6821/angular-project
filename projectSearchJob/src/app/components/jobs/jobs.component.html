@@ -1,1 +1,13 @@
-<p>jobs works!</p>
+<div class="job-search">
+    <p>Select a city for possible jobs</p>
+    <select name="jobArea" (change)="sortByArea($event)">
+        <option value="all">All</option>
+        <option *ngFor="let area of jobsOfFieldByArea" [value]="area">{{area}}</option>
+    </select>
+</div>
+
+<div class="job-listings">
+    <div class="job-card" *ngFor="let j of jobsOfField">
+        <app-job [jobData]="j"></app-job>
+    </div>
+</div>

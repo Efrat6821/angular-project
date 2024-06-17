@@ -8,7 +8,7 @@ namespace ServerSide.Models
         public string? FullName { get; set; }
         public string? Email { get; set; }
         public string? JobSearchField { get; set; }
-
-        // public JobFields JobSearchField { get; set; }
+        public int? CountSendCV { get; set; }
+        public List<int>? SendCVList { get; set; }
     }
 }

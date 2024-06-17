@@ -1,21 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { User } from '../Models/user';
 import { Job } from '../Models/job';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class JobsService {
+export class SortByAreaService {
 
-  private apiUrl = '';
+  apiUrl: string = "";
 
   constructor(private http: HttpClient) { }
 
-  getAllJobs(filed:string): Observable<Job[]> {
+  sortByArea(area: string, filed: string): Observable<Job[]> {
 
-    this.apiUrl = `https://localhost:7178/api/Jobs/filed?filed=${filed}`;
+    this.apiUrl = `https://localhost:7178/api/Jobs/area?area=${area}&filed=${filed}`;
 
     return this.http.get<Job[]>(this.apiUrl);
   }

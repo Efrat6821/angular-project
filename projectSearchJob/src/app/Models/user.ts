@@ -4,5 +4,7 @@ export interface User {
     password:string,
     fullName:string,
     email:string,
-    jobSearchField: string
+    jobSearchField: string,
+    countSendCV:number,
+    sendCVList: number[]
 }

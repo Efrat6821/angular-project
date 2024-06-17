@@ -20,5 +20,15 @@ namespace ServerSide.Controllers
         {
             return Ok(_jobService.GetJobs());
         }
+        [HttpGet("filed")]
+        public ActionResult<List<Job>> GetJobsByField(string filed)
+        {
+            return Ok(_jobService.GetJobsByFiled(filed));
+        }
+        [HttpGet("area")]
+        public ActionResult<List<Job>> GetJobsByArea(string area, string filed)
+        {
+            return Ok(_jobService.GetJobsByArea(area, filed));
+        }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\angular\\angular-project\\serverSideFromAngularProject\\ServerSide.csproj": {}
+    "C:\\Users\\USER\\Desktop\\לימודים\\Angular\\angular2\\angular-project-2\\serverSideFromAngularProject\\ServerSide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\angular\\angular-project\\serverSideFromAngularProject\\ServerSide.csproj": {
+    "C:\\Users\\USER\\Desktop\\לימודים\\Angular\\angular2\\angular-project-2\\serverSideFromAngularProject\\ServerSide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\angular\\angular-project\\serverSideFromAngularProject\\ServerSide.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\לימודים\\Angular\\angular2\\angular-project-2\\serverSideFromAngularProject\\ServerSide.csproj",
         "projectName": "ServerSide",
-        "projectPath": "C:\\Users\\USER\\Desktop\\angular\\angular-project\\serverSideFromAngularProject\\ServerSide.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\לימודים\\Angular\\angular2\\angular-project-2\\serverSideFromAngularProject\\ServerSide.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\angular\\angular-project\\serverSideFromAngularProject\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\לימודים\\Angular\\angular2\\angular-project-2\\serverSideFromAngularProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

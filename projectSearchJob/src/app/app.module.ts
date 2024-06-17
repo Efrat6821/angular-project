@@ -9,6 +9,8 @@ import { PageNotFounfComponent } from './components/page-not-founf/page-not-foun
 import { NavComponent } from './components/nav/nav.component';
 import { JobComponent } from './components/job/job.component';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { JobDetailsComponent } from './components/job-details/job-details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { JobsComponent } from './components/jobs/jobs.component';
     NavComponent,
     JobComponent,
     JobsComponent,
+    FooterComponent,
+    JobDetailsComponent,
     ],
   imports: [
     BrowserModule,

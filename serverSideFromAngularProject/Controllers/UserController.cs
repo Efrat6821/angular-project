@@ -25,5 +25,18 @@ namespace ServerSide.Controllers
 
             return Ok(user);
         }
+        [HttpPut("updateCountSendCV")]
+        public ActionResult<int> UpdateCountSendCV(int useId)
+        {
+            _userService.UpdateCountSendCV(useId);
+            return Ok();
+        }
+
+        [HttpPut("UpdateSendCVList")]
+        public ActionResult<int> UpdateSendCVList(int useId, int jobId)
+        {
+            _userService.UpdateSendCVList(useId, jobId);
+            return Ok();
+        }
     }
 }

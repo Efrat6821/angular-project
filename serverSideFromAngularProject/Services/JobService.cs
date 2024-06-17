@@ -24,7 +24,9 @@ namespace ServerSide.Services
             }
         }
 
-        public List<Job> GetJobs() => jobs; 
+        public List<Job> GetJobs() => jobs;
+        public List<Job> GetJobsByFiled(string filed) => jobs.Where(j => j.Filed == filed).ToList();
+        public List<Job> GetJobsByArea(string area, string filed) => jobs.Where(j => j.JobArea == area && j.Filed == filed).ToList();
 
     }
 }

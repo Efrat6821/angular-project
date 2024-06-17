@@ -1,17 +1,18 @@
-<form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
-    <div>
+<form class="login-form" (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm" *ngIf="userConact.id==0">
+  <div class="form-group">
       <label for="userName">Username:</label>
       <input type="text" id="userName" name="userName" ngModel required>
-    </div>
-    <div>
+  </div>
+  <div class="form-group">
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" ngModel required minlength="8">
-    </div>
-    <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)" class="error-message">
+  </div>
+  <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)"
+       class="error-message">
       Password must be at least 8 characters long and should not contain spaces.
-    </div>
-    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
 
-    <button type="submit" [disabled]="!loginForm.valid">Login</button>
-  </form>
-  
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
+</form>
+<button class="logout-button" *ngIf="userConact.id != 0" (click)="logout()">Logout</button>

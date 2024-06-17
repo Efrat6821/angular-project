@@ -1,15 +1,12 @@
 <nav class="navbar">
-  
-    <ul class="nav nav-tabs">
-      <li routerLink="/login" routerLinkActive="active"><img src="../assets/logo.png" id="logoImage"></li>
-      <!-- <li routerLink="/" routerLinkActive="active"></li> -->
-      <li routerLink="/login" routerLinkActive="active"><a>Login</a></li>
 
-      <li (submit)="g()">Hi, {{u.username}}</li>
-      <li routerLink="/SearchJob">תחום: {{u.jobSearchField}}</li>
-      
-    </ul>
-    <!-- <div class="logo">
-      <img src="../assets/logo.png">
-    </div> -->
-  </nav>
+  <ul class="nav nav-tabs">
+    <li routerLink="/login" routerLinkActive="active"><img src="../assets/logo.png" id="logoImage"></li>
+    <li routerLink="/login" routerLinkActive="active">Login</li>
+    <li routerLink="/SearchJob">Job filed: {{u.jobSearchField}}</li>
+  </ul>
+  <ul class="nav nav-details">
+    <li>Hi, {{u.username}}</li>
+    <li>You sended {{u.countSendCV}} CV</li>
+  </ul>
+</nav>

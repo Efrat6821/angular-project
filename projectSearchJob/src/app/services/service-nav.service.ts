@@ -14,7 +14,9 @@ export class ServiceNavService {
     "password": "",
     "fullName": "",
     "email": "",
-    "jobSearchField": ""
+    "jobSearchField": "",
+    "countSendCV":0,
+    "sendCVList": []
   };
 
   getUser(): User {

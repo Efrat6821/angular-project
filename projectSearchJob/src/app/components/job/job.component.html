@@ -1,1 +1,19 @@
-<p>job works!</p>
+<div class="job-listing">
+    <p id="jobsSendCV" *ngIf="isSendCV">You have sent a CV for this position :)</p>
+
+    <div class="job-details">
+        <p>{{jobData.company}}</p>
+        <p>{{jobData.jobName}}</p>
+        <p>Job number: {{jobData.id}}</p>
+        <p>Scope of position: {{jobData.scopeOfPosition}}</p>
+        <p>Job location: {{jobData.jobArea}}</p>
+    </div>
+
+    <div class="job-actions">
+        <button (click)="showJobDetails()" *ngIf="!doShowJobDetais">View job details</button>
+        <button (click)="notShowJobDetails()" *ngIf="doShowJobDetais">Show less</button>
+        <app-job-details [jobData]="jobData" *ngIf="doShowJobDetais"></app-job-details>
+        <button (click)="sendCV()" [disabled]="isSendCV" [ngStyle]="{'background-color':isSendCV?'#94c4c4':'#3dc3c3'}">Sending CV</button>
+        <img src="../../../assets/wired-outline-213-arrow-2-rounded (4).gif" *ngIf="doSendCV">
+    </div>
+</div>

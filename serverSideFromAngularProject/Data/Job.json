@@ -5,7 +5,8 @@
         "Company": "Top group",
         "JobArea": "Jerusalem",
         "Description": "Develop and maintain software solutions.",
-        "Filed": "developer"
+        "Filed": "developer",
+        "ScopeOfPosition": "full time job"
     },
     {
         "Id": 101,
@@ -13,7 +14,8 @@
         "Company": "Malam",
         "JobArea": "Modiin Ilit",
         "Description": "Develop and maintain software solutions.",
-        "Filed": "developer"
+        "Filed": "developer",
+        "ScopeOfPosition": "Student job"
     },
     {
         "Id": 102,
@@ -21,6 +23,43 @@
         "Company": "Beit yakov Avi Ezry",
         "JobArea": "Modiin Ilit",
         "Description": "A math teacher is needed for the upper grades",
-        "Filed": "teacher"
+        "Filed": "teacher",
+        "ScopeOfPosition": "part time job"
+    },
+    {
+        "Id": 103,
+        "JobName": "Junior software developer",
+        "Company": "Top group",
+        "JobArea": "Jerusalem",
+        "Description": "Develop and maintain software solutions.",
+        "Filed": "developer",
+        "ScopeOfPosition": "full time job"
+    },
+    {
+        "Id": 104,
+        "JobName": "Junior software developer",
+        "Company": "Malam",
+        "JobArea": "Modiin Ilit",
+        "Description": "Develop and maintain software solutions.",
+        "Filed": "developer",
+        "ScopeOfPosition": "Student job"
+    },
+    {
+        "Id": 105,
+        "JobName": "Junior software developer",
+        "Company": "Top group",
+        "JobArea": "Jerusalem",
+        "Description": "Develop and maintain software solutions.",
+        "Filed": "developer",
+        "ScopeOfPosition": "full time job"
+    },
+    {
+        "Id": 106,
+        "JobName": "Junior software developer",
+        "Company": "Malam",
+        "JobArea": "Modiin Ilit",
+        "Description": "Develop and maintain software solutions.",
+        "Filed": "developer",
+        "ScopeOfPosition": "Student job"
     }
 ]
